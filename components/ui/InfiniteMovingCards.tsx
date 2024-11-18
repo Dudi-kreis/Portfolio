@@ -82,14 +82,14 @@ export const InfiniteMovingCards = ({
                     pauseOnHover && "hover:[animation-play-state:paused]"
                 )}
             >
-                {items.map((item, idx) => (
+                {items.map((item) => (
                     <li
                         className="w-[200px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[200px]"
-                    /*                         style={{
-                                                background:
-                                                    "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-                                            }} */
-                    /*   key={item.name} */
+                        /*                         style={{
+                                                    background:
+                                                        "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+                                                }} */
+                        key={"name"}
                     >
                         <blockquote>
                             <img src={item.title} alt={item.title} />

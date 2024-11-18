@@ -190,7 +190,7 @@ const ShaderMaterial = ({
     uniforms: Uniforms;
 }) => {
     const { size } = useThree();
-    const ref = useRef<THREE.Mesh>();
+    const ref = useRef<THREE.Mesh>(null!);
     let lastFrameTime = 0;
 
     useFrame(({ clock }) => {
@@ -207,7 +207,7 @@ const ShaderMaterial = ({
     });
 
     const getUniforms = () => {
-        const preparedUniforms: any = {};
+        const preparedUniforms: { [key: string]: { value: any; type: string } } = {};
 
         for (const uniformName in uniforms) {
             const uniform: any = uniforms[uniformName];
@@ -247,7 +247,7 @@ const ShaderMaterial = ({
 
         preparedUniforms["u_time"] = { value: 0, type: "1f" };
         preparedUniforms["u_resolution"] = {
-            value: new THREE.Vector2(size.width * 2, size.height * 2),
+            value: new THREE.Vector2(size.width * 2, size.height * 2), type: "hello"
         }; // Initialize u_resolution
         return preparedUniforms;
     };
