@@ -2,7 +2,7 @@
 import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+// import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 const Approach = () => {
     return (
@@ -20,11 +20,11 @@ const Approach = () => {
             and key functionalities. We'll discuss things like site structure, 
             navigation, and content requirements."
                 >
-                    <CanvasRevealEffect
+                    {/* <CanvasRevealEffect
                         animationSpeed={5.1}
                         // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
                         containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
-                    />
+                    /> */}
                 </Card>
                 <Card
                     title="Development & Progress Update"
@@ -33,7 +33,7 @@ const Approach = () => {
             coding. From initial sketches to polished code, I keep you updated
             every step of the way."
                 >
-                    <CanvasRevealEffect
+                    {/* <CanvasRevealEffect
                         animationSpeed={3}
                         // change bg-black to bg-pink-900
                         containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
@@ -43,7 +43,7 @@ const Approach = () => {
                             [221, 255, 247],
                         ]}
                         dotSize={2}
-                    />
+                    /> */}
                     {/* Radial gradient for the cute fade */}
                     {/* remove this one */}
                     {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
@@ -55,11 +55,11 @@ const Approach = () => {
             I'll translate everything into functional code, building your website
             from the ground up."
                 >
-                    <CanvasRevealEffect
+                    {/* <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
                         colors={[[125, 211, 252]]}
-                    />
+                    /> */}
                 </Card>
             </div>
         </section>
